@@ -59,7 +59,7 @@ ref={inputRef}
 
 />
 <button className='TODOBUTTON'>
-Add
+Add Todo
 </button>
 </>
       )}

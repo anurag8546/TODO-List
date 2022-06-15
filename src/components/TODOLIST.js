@@ -55,7 +55,11 @@ const completeTODO= id => {
 
   return(
 <>
+
+
 <div>
+
+
         <h1>
           Write down your plans below :
         </h1>
@@ -68,8 +72,13 @@ const completeTODO= id => {
         updateTODO={updateTODO}
       />
     </div>
+
+   
     </>
+
+
     );
+   
 }
 
 export default TODOLIST;

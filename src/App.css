@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+
+/*Styling Body starts*/
+
+  body {
+    background: linear-gradient(
+      90deg,
+    rgb(255, 171, 16) 0%,
+      rgb(255, 100, 242) 100%
+/*  
+white 0%,white 100%
+*/
+
+    );
+
+  }
+
+/*Styling Body ends*/
+
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 520px;
+    min-height: 600px;
+    background:#161a2b;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 15px;
+    padding-bottom: 32px;
+   /* box-shadow: 5px 3px 3px 3px #b8b6b6;*/
+  }
+  
+
+h1{
+    color: white;
+margin-top: 10px;
+}
+
+
+.complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+
+  
+.TODOFORM {
+    margin-bottom: 32px;
+    margin-top: 30px;
+  }
+   /*  Styling the main form => Add todo     Starts*/ 
+
+  
+.TODOINPUT {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #c51d6c59;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #fff;
+  }
+
+
+ 
+  
+.TODOINPUT::placeholder {
+    color: #e2e2e2;
+    size: 10px;
+  }
+
+
+  .TODOBUTTON {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    );
+    color: #fff;
+    
+  }
+   /*  Styling the main form => Add todo     ends*/ 
+
+    
+
+   /*  Styling the update form => update     Starts*/ 
+
+  
+  
+.todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #c51d6c59;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #fff;
+  }
+
+  
+.todo-input::placeholder {
+    color: #e2e2e2;
+    size: 10px;
+  }
+
+
+  .todo-button{
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    );
+    color: #fff;
+    
+  }
+  
+
+  
+.todo-input-edit {
+    border: 2px solid #149fff;
+  }
+  
+.todo-button-edit {
+    background: linear-gradient(
+      90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%
+    );
+    padding: 16px 22px;
+  }
+  
+  
+
+   /*  Styling the update form => update    ends*/ 
+
+
+   /*  styling of input todos starts here  */
+
+  .todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 118, 20, 1) 0%,
+      rgba(255, 84, 17, 1) 100%
+    );
+    padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+  }  
+
+/*  styling of input todos ends here  */
+  
+
+/*  styling off icons starts here*/
+
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    margin-right: 5px;
+    color: #fff;
+  }
+  
+  .edit-icon {
+    color: #fff;
+  }
+
+  /*  styling off icons ends here*/
+
+
+  
