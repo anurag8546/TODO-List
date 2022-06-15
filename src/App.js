@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="todo-app">
 
-         <TODOFORM/>
+         <list/>
            </div>
   );
 }
