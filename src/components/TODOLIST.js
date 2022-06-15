@@ -1,17 +1,29 @@
-import React, {useState} from 'react'
-import TODOFORM from './TODOFORM'
-function TODOLIST() {
+import React, {useState} from 'react';
+import TODOFORM from './TODOFORM';
+function TODOLIST(){
 
-    const {todos, setTodo}= useState([])
+    const {todos, setTodos}= useState([]);
 
-  return (
+//It'll add todos in list
+const addTodos=todo_input=>{
+
+    //this is the case when user just gives unnecessary spaces
+    if(!todo_input.text || /^\s*$/.test(todo_input.text)){
+        return;
+    }
+    const newTodos={todo_input, ...todos};
+
+    setTodos(newTodos);
+    console.log(todo_input, ...todos);
+};
+  return(
     <div>
         <h1>
             Whats up?
         </h1>
-    <TODOFORM/>
+    <TODOFORM onSubmit={addTodos}/>
     </div>
-    )
+    );
 }
 
-export default TODOLIST
+export default TODOLIST;
