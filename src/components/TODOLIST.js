@@ -16,7 +16,7 @@ const addTodos=todo_input=>{
 
     setTodos(newTodos);
     //it'll print the inputs in console along with it's id
-    console.log(todo_input, ...todos);
+    // console.log(todo_input, ...todos);
 };
 
 
@@ -42,11 +42,11 @@ const removeTODO=id=>{
 
 
 const completeTODO= id => {
-    let updatedTodos=todos.map(todo => {
-      if (todo.id===id) {
-        todo.isComplete = !todo.isComplete;
+    let updatedTodos=todos.map(todo_input => {
+      if (todo_input.id===id) {
+        todo_input.isComplete = !todo_input.isComplete;
       }
-      return todo;
+      return todo_input;
     });
     setTodos(updatedTodos);
   };
@@ -57,7 +57,7 @@ const completeTODO= id => {
 <>
 <div>
         <h1>
-            Whats up?
+          Write down your plans below :
         </h1>
     <TODOFORM onSubmit={addTodos}/>
     

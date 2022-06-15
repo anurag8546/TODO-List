@@ -2,12 +2,15 @@ import React, {useState, useEffect, useRef } from 'react';
 
 function TODOFORM(props) {
 const [input, setInput]=useState(props.edit ? props.edit.value : '');
-const inputRef = useRef(null);
+
+
+const inputRef = useRef(null)
 
 
 useEffect(() => {
-  inputRef.current.focus();
-});
+  inputRef.current.focus()
+})
+
 
 
   function handleChange (e) {
@@ -26,7 +29,7 @@ useEffect(() => {
 
   return (
     <form onSubmit={handleSubmit} className='TODOFORM'> 
-
+{props.edit ? (
 <>
 <input
             placeholder='Update your item'
@@ -52,11 +55,14 @@ value={input}
 name="text"
 className='TODOINPUT'
 onChange={handleChange}
+ref={inputRef}
+
 />
 <button className='TODOBUTTON'>
-ADD
+Add
 </button>
 </>
+      )}
     </form>
     
   );
