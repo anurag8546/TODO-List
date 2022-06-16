@@ -49,11 +49,55 @@ white 0%,white 100%
     margin-top: 20px;
    /* box-shadow: 5px 3px 3px 3px #b8b6b6;*/
   }
-  
+
+  /* styling header in index.html */
 
 h1{
+
     color: white;
 margin-top: 10px;
+}
+
+/*resset button styling*/
+
+.resetbutton{
+text-align: center;
+    position: absolute;
+    right: -20px;
+    width: 100px;
+    height: 50px;
+    /* border: 3px solid blue; */
+    padding: 10px;
+margin-right: 50px;
+margin-top: 0px;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    );
+    color: #fff;
+    
+}
+
+
+.button1{
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    );
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 2px;
+font-size: 20px;
+
 }
 
 
@@ -180,7 +224,7 @@ margin-top: 10px;
     background: linear-gradient(
       90deg,
       rgba(255, 118, 20, 1) 0%,
-      rgba(255, 84, 17, 1) 100%
+      rgb(245, 67, 165) 100%
     );
     padding: 16px;
   border-radius: 5px;
