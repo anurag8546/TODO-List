@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import TODOFORM from './TODOFORM';
 import TODO from './TODO'
 
+
 // get the local items
 
 function getlocal(){
@@ -70,6 +71,14 @@ const completeTODO= id => {
   useEffect(()=>{
 localStorage.setItem('setTodos',JSON.stringify(todos));
   }, [todos]);
+
+
+//button functionality
+var element = document.getElementById("button1");
+element.onclick = function() {
+ return setTodos([]);
+}
+
 
 
   return(
