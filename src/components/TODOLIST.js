@@ -1,9 +1,23 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import TODOFORM from './TODOFORM';
 import TODO from './TODO'
+
+// get the local items
+
+function getlocal(){
+  let item=localStorage.getItem('setTodos');
+  if(item)
+  return JSON.parse(localStorage.getItem('setTodos'));
+else
+return [];
+}
+
 function TODOLIST(){
 
-    const [todos, setTodos]= useState([]);
+    const [todos, setTodos]= useState(getlocal());
+
+
+
 
 //It'll add todos in list
 const addTodos=todo_input=>{
@@ -51,6 +65,11 @@ const completeTODO= id => {
     setTodos(updatedTodos);
   };
 
+  // set the items in the local list 
+
+  useEffect(()=>{
+localStorage.setItem('setTodos',JSON.stringify(todos));
+  }, [todos]);
 
 
   return(
